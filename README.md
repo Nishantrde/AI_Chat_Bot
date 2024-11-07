@@ -112,5 +112,19 @@ This project is a Django-based REST API for an AI chat system, enabling users to
 ```bash 
 http://127.0.0.1:8000/api/.
 
+# Example Usage
+Here’s how to interact with the API endpoints.
+
+## Registration
+```bash
+curl -X POST http://127.0.0.1:8000/api/register/ -H "Content-Type: application/json" -d "{\"username\":\"name\", \"password\":\"pw@123\"}"
+
+## Login
+  ```bash
+  curl -X POST http://127.0.0.1:8000/api/login/ -H "Content-Type: application/json" -d "{\"username\":\"name\", \"password\":\"pw@123\"}"
+
+## Chat with AI
+   ```bash
+   curl -X POST http://127.0.0.1:8000/api/chat/ -H "Content-Type: application/json" -H "Authorization: Token <token>" -d "{\"message\":\"hello\"}"
 
 
