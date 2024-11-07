@@ -29,5 +29,5 @@ urlpatterns = [
     path("api/register/", RegisterView.as_view(), name="register"),
     path("api/login/", LoginView.as_view(), name="login"),
     path("api/chat/", ChatView.as_view(), name="chat"),
-    path("api/tokens/", TokenBalanceView.as_view(), name="token_balance"),
+    path("api/balance/", TokenBalanceView.as_view(), name="token_balance"),
 ]
