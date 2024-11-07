@@ -98,33 +98,34 @@ This project is a Django-based REST API for an AI chat system, enabling users to
    ```bash
    pip install -r requirements.txt
 
-
 4. Run migrations
    ```bash
    python manage.py migrate
-
 
 5. Start the development server
    ```bash
    python manage.py runserver
 
-6. API Documentation: Access the API
-```bash 
-http://127.0.0.1:8000/api/.
+5. Start the development server
+   ```bash
+   http://127.0.0.1:8000/api/
 
 # Example Usage
+
 Here’s how to interact with the API endpoints.
 
-## Registration
-```bash
-curl -X POST http://127.0.0.1:8000/api/register/ -H "Content-Type: application/json" -d "{\"username\":\"name\", \"password\":\"pw@123\"}"
+  ## Registration
+      
+        curl -X POST http://127.0.0.1:8000/api/register/ -H "Content-Type: application/json" -d "{\"username\":\"name\", \"password\":\"pw@123\"}"
 
-## Login
-  ```bash
-  curl -X POST http://127.0.0.1:8000/api/login/ -H "Content-Type: application/json" -d "{\"username\":\"name\", \"password\":\"pw@123\"}"
+  ## Login
+      
+      curl -X POST http://127.0.0.1:8000/api/login/ -H "Content-Type: application/json" -d "{\"username\":\"name\", \"password\":\"pw@123\"}"
 
-## Chat with AI
+  ## Chat with AI
+      curl -X POST http://127.0.0.1:8000/api/chat/ -H "Content-Type: application/json" -H "Authorization: Token <token>" -d "{\"message\":\"hello\"}"
+
+  ## Check balance
    ```bash
-   curl -X POST http://127.0.0.1:8000/api/chat/ -H "Content-Type: application/json" -H "Authorization: Token <token>" -d "{\"message\":\"hello\"}"
-
+  curl -X GET http://127.0.0.1:8000/api/balance/ -H "Content-Type: application/json" -H "Authorization: Token <token>" 
 
