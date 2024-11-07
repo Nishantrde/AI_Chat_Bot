@@ -26,8 +26,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    path("register/", RegisterView.as_view(), name="register"),
-    path("login/", LoginView.as_view(), name="login"),
-    path("chat/", ChatView.as_view(), name="chat"),
-    path("tokens/", TokenBalanceView.as_view(), name="token_balance"),
+    path("api/register/", RegisterView.as_view(), name="register"),
+    path("api/login/", LoginView.as_view(), name="login"),
+    path("api/chat/", ChatView.as_view(), name="chat"),
+    path("api/tokens/", TokenBalanceView.as_view(), name="token_balance"),
 ]
