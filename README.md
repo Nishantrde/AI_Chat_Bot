@@ -126,6 +126,26 @@ Here’s how to interact with the API endpoints.
       curl -X POST http://127.0.0.1:8000/api/chat/ -H "Content-Type: application/json" -H "Authorization: Token <token>" -d "{\"message\":\"hello\"}"
 
   ## Check balance
-   ```bash
-  curl -X GET http://127.0.0.1:8000/api/balance/ -H "Content-Type: application/json" -H "Authorization: Token <token>" 
+   
+    curl -X GET http://127.0.0.1:8000/api/balance/ -H "Content-Type: application/json" -H "Authorization: Token <token>" 
 
+  # Smaples
+  ## Starting the server
+
+![App Screenshot](https://res.cloudinary.com/dwfdyavop/image/upload/v1731002412/Screenshot_2024-11-07_095350_lybjpr.png)
+
+  ## Registration api
+
+   ![App Screenshot](https://res.cloudinary.com/dwfdyavop/image/upload/v1731002412/Screenshot_2024-11-07_095540_wfa2s6.png)
+
+  ## Login api
+
+   ![App Screenshot](https://res.cloudinary.com/dwfdyavop/image/upload/v1731002760/Screenshot_2024-11-07_100543_xi96xv.png)
+  
+  ## Chat api
+
+   ![App Screenshot](https://res.cloudinary.com/dwfdyavop/image/upload/v1731002412/Screenshot_2024-11-07_095813_l80ydj.png)
+
+  ## Balance api
+
+   ![App Screenshot](https://res.cloudinary.com/dwfdyavop/image/upload/v1731002412/Screenshot_2024-11-07_095937_sdhhdp.png)
